@@ -14,7 +14,7 @@ import com.cognizant.LearnTodayRESTAPI.dao.impl.CourseDaoImpl;
 import com.cognizant.LearnTodayRESTAPI.model.Course;
 
 @RestController
-@RequestMapping("/api/admin")
+@RequestMapping("/api/admin")                                
 public class AdminController {
 	
 	@GetMapping("/getAllCourses")
