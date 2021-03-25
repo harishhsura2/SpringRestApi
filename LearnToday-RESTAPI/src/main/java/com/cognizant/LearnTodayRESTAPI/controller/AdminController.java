@@ -19,7 +19,7 @@ public class AdminController {
 	
 	@GetMapping("/getAllCourses")
 	public ResponseEntity<Object> getAllCourses(){
-		CourseDao dao = new CourseDaoImpl();
+		CourseDao dao = new CourseDaoImpl();                                           
 		List<Course> courses =  dao.getAllCourses();
 		if(courses.size()==0) {
 			return new ResponseEntity<>("No courses found", HttpStatus.NOT_FOUND);
